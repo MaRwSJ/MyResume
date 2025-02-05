@@ -1,0 +1,24 @@
+.award {
+	display: flex;
+	justify-content: space-between;
+
+	@extend .sub-element-spacing;
+
+	& > .column {
+		width: 100%;
+
+		.title {
+			color: $secondary;
+		}
+
+		.issuer {
+			display: flex;
+			justify-content: space-between;
+			@extend .secondary-font;
+		}
+	}
+
+	.date {
+		font-style: normal;
+	}
+}

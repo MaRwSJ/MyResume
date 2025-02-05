@@ -1,0 +1,51 @@
+.certificate {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	width: 100%;
+	padding-left: 0.3in;
+	.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0.1in 0;
+	
+
+	img {
+		margin: 0.1in 0;
+		border-radius: 50%;
+		height: 2.0in;
+		width: 2.0in;
+		object-fit: cover;
+		
+	}
+
+	.name {
+		font-size: 0.375in;
+		font-weight: 400;
+		font-family: 'Lato', sans-serif;
+		
+	}
+}
+
+
+	@extend .sub-element-spacing;
+
+	& > .column {
+		width: 100%;
+		
+	}
+
+	.issuer {
+		display: flex;
+		justify-content: space-between;
+		@extend .secondary-font;
+
+		.date {
+			font-style: normal;
+			padding-right: 0.6in;
+		}
+		
+	}
+}
